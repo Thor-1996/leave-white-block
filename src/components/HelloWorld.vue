@@ -16,11 +16,14 @@
           </div>
         </div>
       </div>
-      <button @click="start">开始</button>
-      <button @click="pause">暂停</button>
-      <button @click="stop">结束</button>
-      <div class="grade">我的得分：{{ grade }}</div>
-      <div class="remainTime">剩余时间：{{ remainTime }}</div>
+      <div>
+        <button @click="start">开始</button>
+        <button @click="pause">暂停</button>
+        <button @click="stop">结束</button>
+        <div class="grade">我的得分：{{ grade }}</div>
+        <div class="remainTime">剩余时间：{{ remainTime }}</div>
+        <p>Tip: 点击开始按钮后，点击最下方的黑块可得1分，点的越快分数越高，限时10秒~</p>
+      </div>
     </div>
     <p style="width:100%;height:200px"></p>
     <p>
@@ -210,7 +213,6 @@ button
   font-size 24px
   color blue
   padding-left 15px
-  padding-right 90px
 .box
   width 402px
   height 602px
