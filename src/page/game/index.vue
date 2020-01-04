@@ -25,10 +25,6 @@
         <p>Tip: 点击开始按钮后，点击最下方的黑块可得1分，点的越快分数越高，限时10秒~</p>
       </div>
     </div>
-    <p style="width:100%;height:200px"></p>
-    <p>
-      网站备案号<a href="http://beian.miitbeian.gov.cn" target="_blank">湘ICP备19024509号-1</a>
-    </p>
   </div>
 </template>
 <script>
@@ -199,32 +195,5 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-button
-  height 30px
-.WHITE
-  background-color white
-.BLACK
-  background-color black
-.grade
-  font-size 24px
-  color rgba(0,0,0,.87)
-  padding-left 15px
-.remainTime
-  font-size 24px
-  color blue
-  padding-left 15px
-.box
-  width 402px
-  height 602px
-  margin 0 auto
-  .line
-    width 400px
-    height 100px
-    display flex
-  .lattice
-    width 100px
-    height 100px
-    border 1px solid gray
-  .lattice:hover
-    cursor pointer
+  @import './index'
 </style>
