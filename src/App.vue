@@ -18,11 +18,18 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+html::-webkit-scrollbar {
+  width:6px;
+  height:50px;
+}
+html::-webkit-scrollbar-thumb {
+  border-radius:2px;
+}
+html::-webkit-scrollbar-track {
+  background:rgb(97, 119, 148);
 }
 </style>

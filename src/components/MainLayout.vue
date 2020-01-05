@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <el-header>Welcome To Webliker!</el-header>
-      <el-main>
+      <el-main class="Main">
         <vue-particles
           color="#000"
           :particleOpacity="0.7"
@@ -39,6 +39,8 @@ export default {
 
 </script>
 <style lang="stylus" scoped>
+.Main
+  height: calc(100vh - 400px);     
 .record
   padding-bottom 30px
 .lizi
