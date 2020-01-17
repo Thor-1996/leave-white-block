@@ -12,11 +12,28 @@ export default {
       width: 0
     }
   },
-  mounted(){
-    this.width = innerWidth
-    window.addEventListener('resize',()=>{
+  methods: {
+    debounce(fn, delay) {
+      let timer
+
+      return () => {
+        clearTimeout(timer)
+        timer = setTimeout(function () {
+         fn()
+       }, delay)
+      }
+    },
+    setWidth() {
       this.width = innerWidth
-    })
+    }
+  },
+  mounted() {
+    const {
+      setWidth,
+      debounce
+    } = this
+    setWidth()
+    window.addEventListener('resize', debounce(setWidth, 150))
   }
 }
 </script>
