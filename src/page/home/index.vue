@@ -2,7 +2,7 @@
   <div class="home">
     <h1>欢迎来到webliker.cn,<router-link to='/game'>点我</router-link>来玩别踩白块</h1>
     <div @click="showHodgepodge = !showHodgepodge" class="click-tip">点我一下？</div>
-    <div class="Hodgepodge" v-show="showHodgepodge">
+    <div class="Hodgepodge" v-if="showHodgepodge">
       <window-width/>
     </div>
   </div>
@@ -19,7 +19,7 @@ export default {
     return {
       showHodgepodge: false
     }
-  }
+  },
 }
 
 </script>

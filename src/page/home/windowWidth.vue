@@ -1,15 +1,14 @@
 <template>
   <div>
-   屏幕宽度：{{ width }}
+    屏幕宽度：{{ width }}
   </div>
 </template>
-
 <script>
 export default {
   name: 'windowWidth',
   data(){
     return {
-      width: 0
+      width: 0,
     }
   },
   methods: {
@@ -33,7 +32,7 @@ export default {
       debounce
     } = this
     setWidth()
-    window.addEventListener('resize', debounce(setWidth, 150))
+    window.onresize = debounce(setWidth, 150)
   }
 }
 </script>
