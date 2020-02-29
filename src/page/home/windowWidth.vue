@@ -33,6 +33,9 @@ export default {
     } = this
     setWidth()
     window.onresize = debounce(setWidth, 150)
+  },
+  destroyed() {
+    window.onresize = null
   }
 }
 </script>
