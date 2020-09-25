@@ -7,7 +7,7 @@ Vue.use(Router);
 
 export default new Router({
   mode: "history",
-  base: "/leave-white-block/dist/",
+  base: "/leave-white-block/",
   routes: [
     {
       path: "/",
